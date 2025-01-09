@@ -1,0 +1,8 @@
+-- π tcode (participate) -- t1, t2, t3
+-- π tcode (stay) -- t1, t2, t3, t4
+
+-- union
+π tcode (participate) ∪ π tcode (stay)
+
+-- intersect
+π tcode (participate) ∩ π tcode (stay)

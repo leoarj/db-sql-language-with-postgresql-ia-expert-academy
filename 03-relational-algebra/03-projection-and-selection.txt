@@ -1,0 +1,3 @@
+-- combinação de projection e selection
+π tcode, acode σ year > 2001 ∧ year ≤ 2004 (participate)
+π year, days σ days > 3 (stay)

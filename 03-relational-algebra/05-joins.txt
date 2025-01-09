@@ -1,0 +1,10 @@
+-- joins
+-- turista←trt.name (renomeia coluna)
+-- ρ ptr participate (renomeia relação)
+-- ⟕ (left outer join)
+	-- (relacao1 ⟕ relacionamento relacaoN...)
+π turista←trt.name, act.aname, ano←year, custo←cost (ρ ptr participate ⟕ ptr.tcode = trt.tcode ρ trt tourist ⟕ ptr.acode = act.acode ρ act activity)
+
+-- sql
+select trt.name as turista, act.aname as atividade, year as ano, cost as custo from participate as ptr
+left outer join tourist as trt on ptr.tcode = trt.tcode left outer join activity as act on ptr.acode = act.acode

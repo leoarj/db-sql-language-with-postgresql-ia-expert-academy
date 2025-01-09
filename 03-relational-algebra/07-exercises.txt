@@ -1,0 +1,12 @@
+-- Exercícios álgebra relacional
+
+-- 1. O nome e o país dos turistas com mais de 20 anos e do gênero feminino (project + select)
+-- π age, gender (tourist)
+π name, country σ age > 20 ∧ gender = 'female' (tourist)
+
+-- 2. O nome do hotel, o nome do cliente, o ano, os dias de hospedagem e custo da hospedagem (join na tabela stay)
+π hotel←ht.name, turista←trt.name, ano←year, dias←days, custo←cost
+(ρ st stay ⟕ st.hcode = ht.hcode ρ ht hotel ⟕ st.tcode = trt.tcode ρ trt tourist)
+
+-- 3. O somatório do custo da hospedagem agrupado pelo nome do hotel (agrupamento e join na tabela stay)
+γ ht.name ; sum(st.cost)->soma (ρ st stay ⟕ st.hcode = ht.hcode ρ ht hotel)

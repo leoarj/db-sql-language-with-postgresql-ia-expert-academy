@@ -1,0 +1,8 @@
+-- σ (selection) = atual como um where, aplicando filtro do que retornar da relação
+σ hcode = 'h1' (hotel)
+σ year > 2001 (participate)
+-- onde ano maior (>) que 2001 e (∧) menor (≤) ou igual a 2004
+σ year > 2001 ∧ year ≤ 2004 (participate)
+
+-- sql
+select * from hotel where hcode = 'h1'

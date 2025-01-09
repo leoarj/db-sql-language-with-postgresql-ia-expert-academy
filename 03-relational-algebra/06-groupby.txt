@@ -1,0 +1,7 @@
+-- γ tourist.name (group by tourist.name) -- por qual campo vai agrupar
+-- ; após esse delimitador, são adicionadas a função de agregação e relações necessárias
+γ tourist.name ; sum(cost)->soma (participate ⟕ participate.tcode = tourist.tcode tourist)
+
+-- sql
+select tourist.name, sum(cost) as soma from participate left outer join tourist on participate.tcode =
+tourist.tcode group by tourist.name
