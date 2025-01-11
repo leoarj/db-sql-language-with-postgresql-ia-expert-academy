@@ -64,8 +64,8 @@ O objetivo é deixar registrado para consultas futuras e caso seja útil, ajudar
     - 4.
         - Projeto de banco de dados
         - BR Modelo Web - Modelo ER
-        - Modelo conceitual
-        - Modelo lógico
+        - Modelo Conceitual
+        - Modelo Lógico
         - Modelo Físico
         - Normalização (1FN, 2FN, 3FN, BCNF, 4FN e 5FN)
 - Projetos/exercícios
